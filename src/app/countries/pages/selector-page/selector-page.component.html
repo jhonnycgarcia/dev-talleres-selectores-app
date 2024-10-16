@@ -3,7 +3,7 @@
 
 <form [formGroup]="myForm" (ngSubmit)="onSubmit()" autocomplete="off">
 
-  <!-- Region -->
+  <!-- Regions -->
    <div class="row mb-3">
     <div class="col">
       <label for="region" class="form-label">Continente</label>
@@ -19,6 +19,20 @@
         >
           {{ region }}
         </option>
+      </select>
+    </div>
+   </div>
+
+  <!-- Countries -->
+   <div class="row mb-3">
+    <div class="col">
+      <label for="country" class="form-label">País</label>
+      <select
+        name="country" id="country"
+        formControlName="country"
+        class="form-control"
+      >
+        <option value="">Seleccione un país</option>
       </select>
     </div>
    </div>
