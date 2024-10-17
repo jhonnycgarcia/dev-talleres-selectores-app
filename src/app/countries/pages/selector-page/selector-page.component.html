@@ -55,9 +55,9 @@
         <option value="">Seleccione un la frontera</option>
         <option
           *ngFor="let border of borders"
-          [value]="border"
+          [value]="border.cca3"
         >
-          {{ border }}
+          {{ border.name }}
         </option>
       </select>
     </div>
